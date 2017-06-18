@@ -1,0 +1,5 @@
+#Start recording tcl command: 6/18/2017 22:36:36
+#Project Location: Z:/GitHub/PrototypeForLattice/MachXO2_blinky; Project name: MachXO2_blinky
+prj_project new -name "MachXO2_blinky" -impl "impl1" -dev LCMXO2-256HC-4TG100C -synthesis "lse"
+prj_project save
+#Stop recording: 6/18/2017 22:37:00
