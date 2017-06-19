@@ -1,0 +1,13 @@
+----------------------------------------------------------------------
+Report for cell blinky.TECH
+Register bits:  28 of 424 (6.604%)
+I/O cells:      8
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        15          100.0
+                            FD1S3IX        28          100.0
+                                GSR         1          100.0
+                               LUT4         7          100.0
+                                 OB         8          100.0
+                               OSCH         1          100.0
+                              TOTAL        60
