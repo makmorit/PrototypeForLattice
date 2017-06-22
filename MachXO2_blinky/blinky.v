@@ -1,5 +1,5 @@
 module blinky (
-    output reg[7:0] LED
+    output reg[3:0] LED
     );
     // internal constants
     // N: sets counter size
@@ -21,48 +21,24 @@ module blinky (
 
     // counter with no flag control
     always @ (posedge osc_clk) begin
-        if (count < {8'h 79, {N-7{1'h 0}}}) begin
-            count <= count + 1;
+        if (count < {8'h 78, {N-7{1'h 0}}}) begin
+            count <= count + {N{1'h 1}};
         end else begin
             count <= {N{1'h 0}};
         end
     end
 
     //4-8 data encoder ROM
-    always @ (count[N-1:N-4]) begin
-        case (count[N-1:N-4])
-            4'b 0001:
-                LED[7:0] <= ~8'b 0001_1000;
-            4'b 0010:
-                LED[7:0] <= ~8'b 0101_1010;
-            4'b 0011:    
-                LED[7:0] <= ~8'b 0111_1110;
-            4'b 0100:
-                LED[7:0] <= ~8'b 1111_1111;
-            4'b 0101:    
-                LED[7:0] <= ~8'b 1110_0111;
-            4'b 0110:
-                LED[7:0] <= ~8'b 0110_0110;
-            4'b 0111:
-                LED[7:0] <= ~8'b 0101_1010;
-            4'b 1000:    
-                LED[7:0] <= ~8'b 0011_1100;
-            4'b 1001:
-                LED[7:0] <= ~8'b 0001_1000;
-            4'b 1010:    
-                LED[7:0] <= ~8'b 0010_0100;
-            4'b 1011:
-                LED[7:0] <= ~8'b 0100_0010;
-            4'b 1100:    
-                LED[7:0] <= ~8'b 1000_0001;
-            4'b 1101:
-                LED[7:0] <= ~8'b 0100_0010;
-            4'b 1110:
-                LED[7:0] <= ~8'b 0010_0100;
-            4'b 1111:
-                LED[7:0] <= ~8'b 0001_1000;
+    always @ (count[N-1:N-2]) begin
+        case (count[N-1:N-2])
+            2'b 01:
+                LED[3:0] <= ~4'b 1000;
+            2'b 10:
+                LED[3:0] <= ~4'b 0100;
+            2'b 11:
+                LED[3:0] <= ~4'b 0010;
             default :
-                LED[7:0] <= ~8'b 0000_0000;
+                LED[3:0] <= ~4'b 0001;
         endcase
     end
 endmodule
