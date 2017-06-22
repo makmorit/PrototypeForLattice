@@ -26,15 +26,6 @@
             <Navigation>1793</Navigation>
         </Message>
         <Message>
-            <ID>35901209</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>z:/github/prototypeforlattice/machxo2_blinky/blinky.v(24): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>28</Dynamic>
-            <Navigation>z:/github/prototypeforlattice/machxo2_blinky/blinky.v</Navigation>
-            <Navigation>24</Navigation>
-        </Message>
-        <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
         </Message>

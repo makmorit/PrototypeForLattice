@@ -1,0 +1,10 @@
+---------------------------------------------------
+Report for cell blinky
+   Instance path: blinky
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      18.00        100.0
+                                  LUT4	       5.00        100.0
+                                 IOBUF	          4        100.0
+                                PFUREG	         28        100.0
+                                RIPPLE	         15        100.0

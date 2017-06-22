@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "Z:/GitHub/PrototypeForLattice/MachXO2_blinky"  

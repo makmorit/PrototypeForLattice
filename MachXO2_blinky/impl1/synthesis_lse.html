@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Jun 19 22:59:55 2017
+Thu Jun 22 17:51:40 2017
 
 
 Command Line:  synthesis -f MachXO2_blinky_impl1_lattice.synproj -gui -msgset Z:/GitHub/PrototypeForLattice/MachXO2_blinky/promote.xml 
@@ -90,7 +90,6 @@ Analyzing Verilog file C:/lscc/diamond/3.9/ispfpga/userware/NT/SYNTHESIS_HEADERS
 Top module name (Verilog): blinky
 INFO - synthesis: z:/github/prototypeforlattice/machxo2_blinky/blinky.v(1): compiling module blinky. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.9/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="133.00"). VERI-1018
-WARNING - synthesis: z:/github/prototypeforlattice/machxo2_blinky/blinky.v(24): expression size 32 truncated to fit in target size 28. VERI-1209
 Loading NGL library 'C:/lscc/diamond/3.9/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.9/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.9/ispfpga/or5g00/data/orc5glib.ngl'...
@@ -116,8 +115,8 @@ Number of register bits => 28 of 424 (6 % )
 CCU2D => 15
 FD1S3IX => 28
 GSR => 1
-LUT4 => 7
-OB => 8
+LUT4 => 5
+OB => 4
 OSCH => 1
 ################### End Area Report ##################
 
@@ -134,16 +133,16 @@ Number of Clock Enables: 0
 Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : n273, loads : 28
+  Net : n193, loads : 28
   Net : count_27, loads : 6
   Net : count_26, loads : 6
-  Net : count_25, loads : 6
-  Net : count_24, loads : 6
-  Net : LED_c, loads : 2
-  Net : n298, loads : 2
-  Net : n299, loads : 2
-  Net : n300, loads : 2
-  Net : count_23, loads : 2
+  Net : count_25, loads : 2
+  Net : count_24, loads : 2
+  Net : LED_c_3, loads : 1
+  Net : LED_c_2, loads : 1
+  Net : LED_c_1, loads : 1
+  Net : LED_c_0, loads : 1
+  Net : n20, loads : 1
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -161,10 +160,10 @@ clk0 [get_nets osc_clk]                 |    1.000 MHz|  160.462 MHz|    16
 All constraints were met.
 
 
-Peak Memory Usage: 35.516  MB
+Peak Memory Usage: 34.227  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.453  secs
+Elapsed CPU time for LSE flow : 0.469  secs
 --------------------------------------------------------------
 
 

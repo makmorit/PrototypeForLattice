@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "MachXO2_blinky_impl1.log"
+-o "MachXO2_blinky_impl1.csv"
+-pr "MachXO2_blinky_impl1.prf"
